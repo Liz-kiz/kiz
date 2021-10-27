@@ -2,8 +2,7 @@
 <head>
     <meta charset='UTF-8'><meta name="robots"
 
-    <link href="style.css" rel="stylesheet" type="text/css" /><script src='https://s.codepen.io/assets/libs/prefixfree.min.js'></script><script src='https://s.codepen.io/assets/libs/modernizr.js'></script><link rel='stylesheet prefetch' href='https://tympanus.net/Development/AnimatedHeaderBackgrounds/css/component.css'>
-    <meta http-equiv="refresh" content="50000000000000000; URL=https://www.bitdegree.org/" />
+    <link href="abts.css" rel="stylesheet" type="text/css" /><script src='https://s.codepen.io/assets/libs/prefixfree.min.js'></script><script src='https://s.codepen.io/assets/libs/modernizr.js'></script><link rel='stylesheet prefetch' href='https://tympanus.net/Development/AnimatedHeaderBackgrounds/css/component.css'>
 <style class="cp-pen-styles">@font-face {
   font-weight: normal;
   font-style: normal;
@@ -106,95 +105,110 @@ p.ref {
   -webkit-font-smoothing: antialiased;
 }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-html{
-     background-color: rgb(4, 190, 247);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 700px;
-    background-position: center;
+.codrops-icon-drop:before {
+  content: "\e001";
 }
-body{
-    font-size: 22px;
-    line-height: 32px;
-    color: #ffffff;
-    font-family: 'Open Sans',sans-serif;
+
+.codrops-icon-prev:before {
+  content: "\e004";
 }
-nav{
-    background-color: #000000;
+
+/* Demo Buttons Style */
+.codrops-demos {
+  padding-top: 1em;
+  font-size: 0.8em;
 }
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
+
+.codrops-demos a {
+  display: inline-block;
+  margin: 0.35em 0.1em;
+  padding: 0.5em 1.2em;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 2px;
+  font-size: 110%;
+  border: 2px solid transparent;
 }
-nav ul li{
-    display: inline-block;
-    background-color: #000000;
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo {
+  border-color: #383a3c;
 }
-nav a{
-    display: block;
-    padding: 0 15px;
-    color: #fff;
-    line-height: 60px;
-    font-size: 20px;
-    text-decoration: none;
+
+.codrops-demos h3 {
+  margin: 0;
+  padding: 1em 0 0.5em 0;
+  font-size: 0.9em;
+  float: left;
+  min-width: 90px;
+  clear: left;
 }
-/* Hide Dropdown by Default*/
-nav ul ul {
-    display: none;
+
+.codrops-demos div:not(:first-child) h3 {
+  padding-top: 2em;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo {
+  color: inherit;
+  border-color: initial;
+}
+
+/* Related demos */
+.related {
+  padding: 10em 0;
+}
+
+.related p {
+  font-size: 1.5em;
+}
+
+.related > a {
+  display: inline-block;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 25px;
+  vertical-align: middle;
+}
+
+.related a img {
+  max-width: 100%;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.related a:hover img,
+.related a:active img {
+  opacity: 1;
+}
+
+.related a h3 {
+  margin: 0;
+  min-height: 63px;
+  padding: 0.5em 0 0.3em;
+  max-width: 300px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 800px) {
+  body #cdawrap {
+    width: 180px;
+    right: 25px;
+    top: 100%;
     position: absolute;
-    top: 60px;
+    margin-top: 25px;
+  }
 }
-/* hover */
-nav a:hover{
-    background-color: #ff0000;
-    color: #000000;
+@media screen and (max-width: 40em) {
+  .codrops-header h1 {
+    font-size: 2.5em;
+  }
 }
-/* Display Dropdown on Hover */
-nav ul li:hover > ul {
-    display: inherit;
-}
-/* Fisrt Tier Dropdown */
-nav ul ul li{
-    width: 170px;
-    float: none;
-    display: list-item;
-    position: relative;
-
-}
-
-/* ============ Second, Third and More Tiers ===========*/
-nav ul ul ul li {
-    position: relative;
-    top: -60px;
-    left: 170px;
-}
-
-/* Change this in order to change the Dropdown symbol */
-li > a::after { content: ' +';}
-li > a:only-child::after {
-    content: '';
-}
-</style>
-</head>
-<body>
-  <div id="container">
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-          
-
-        </ul>
-    </nav>
-</div><!--End HTML Code-->
-
-
-    <div id="container" touch-action="none"></div>
-    <script src="script.js"></script>
-
 </style></head><body>
 <html lang="en" class="no-js">
   <head>
@@ -218,15 +232,10 @@ li > a:only-child::after {
           
         </div>
         <div class="codrops-header">
-          <h1 style="color:black;"><strong>Basic introduction </strong> <hr> <span style="color:black;"><strong>Hey, I'm Kiz, well... right now I am. Nice to meet you. <hr> I don't really share anything like gender, name, location, ect... so unless we become close friends, all you need to know is:<p style="font-size:20px"> Online names: Kiz/meli/Liz/Mel/Kyrie </p> <p style="font-size:20px"> Pronouns: They/Them/It/She/He/Yes </p> <p style="font-size:20px"> Age: like 300? i think...... </p> <p style="font-size:20px"> Location: Earth/Europe/UK/England </p> <hr> I'm your average discord, bot loving nerd. I frequently play poketwo and owobot. Occasionally i may play dank memer, anigame, virtual fisher, karuta, pokemon and a few more...<hr>
+          <h1><strong>Basic introduction </strong> <span style="color:black;"><strong>Hey, I'm Kiz, well... right now I am. Nice to meet you. <hr> I don't really share anything like gender, name, location, ect... so unless we become close friends, all you need to know is:<p style="font-size:20px"> Names: Kiz/Liz/Mel/Kyrie </p><p style="font-size:20px"> Gender: Alien </p> <p style="font-size:20px"> They/Them/It/She/He/Yes </p> <p style="font-size:20px"> Age: like 300? i think </p> <p style="font-size:20px"> Location: Earth/Europe/UK/England </p> <hr> I'm your average discord, bot loving nerd. I frequently play poketwo and owobot. Occasionally i may play dank memer, anigame, virtual fisher, karuta, pokemon and a few more...<hr>
           My online and real life persona may differ and my personality may change rapidly but I will always be just as cringe.<hr>My hobbies consist of Programming, (quantum, particle and theoretical) sciences, making new friends, playing bots, listening to music, volleyball, school and watching anime.</strong></span></h1>
-
-
-
-    
-
-
-
+          <a href="https://dsc.zorozoro1.repl.co/">Home page</a>
+          <a href="https://dsc.zorozoro1.repl.co/online.html">Next page</a>
 
 
   </body>
